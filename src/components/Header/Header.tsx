@@ -26,7 +26,7 @@ export function Header() {
 
         {/* Ícones (Busca, Conta, Carrinho) */}
         <div className={styles.icons}>
-        <button title='pesquisa'><MdAssignmentReturn /></button>
+        <button title='compras'><MdAssignmentReturn /></button>
         <button title='gostei'><CiHeart /></button>
           <button title='pesquisa'><FaRegUserCircle /></button>
           <button title='carrinho'><PiShoppingCart /></button>
