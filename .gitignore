@@ -1,0 +1,14 @@
+# Ignorar dependências do Node.js
+node_modules/
+
+# Ignorar arquivos de build
+dist/
+.next/
+
+# Ignorar variáveis de ambiente
+.env
+.env.local
+
+# Ignorar logs e caches
+npm-debug.log
+yarn-error.log
