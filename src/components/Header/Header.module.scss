@@ -1,0 +1,40 @@
+@import '../../styles/variables';
+
+.header {
+  background-color: #333; // Fundo escuro
+  padding: 16px 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.logo img {
+  height: 50px;
+}
+
+.nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.icons button {
+  background: none;
+  border: none;
+  font-size: 18px;
+  color: white;
+  cursor: pointer;
+  margin-left: 10px;
+}
