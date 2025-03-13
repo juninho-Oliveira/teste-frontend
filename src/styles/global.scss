@@ -1,6 +1,6 @@
 /* Reset, estilos globais e importação das variáveis */
 
-@import './variables';
+@use '../styles/variables' as *;
 
 * {
   margin: 0;

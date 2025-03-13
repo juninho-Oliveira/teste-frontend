@@ -1,5 +1,9 @@
 import styles from './Header.module.scss';
 import Logo from '../../assets/logo.png'
+import { FaRegUserCircle } from "react-icons/fa";
+import { CiHeart } from "react-icons/ci";
+import { PiShoppingCart } from "react-icons/pi";
+import { MdAssignmentReturn } from "react-icons/md";
 
 export function Header() {
   return (
@@ -22,9 +26,10 @@ export function Header() {
 
         {/* Ícones (Busca, Conta, Carrinho) */}
         <div className={styles.icons}>
-          <button>🔍</button>
-          <button>👤</button>
-          <button>🛒</button>
+        <button title='pesquisa'><MdAssignmentReturn /></button>
+        <button title='gostei'><CiHeart /></button>
+          <button title='pesquisa'><FaRegUserCircle /></button>
+          <button title='carrinho'><PiShoppingCart /></button>
         </div>
       </div>
     </header>
