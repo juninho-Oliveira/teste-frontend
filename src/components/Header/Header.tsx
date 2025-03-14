@@ -5,7 +5,7 @@ import { CiHeart, CiCreditCard1 } from "react-icons/ci";
 import { PiShoppingCart } from "react-icons/pi";
 import { MdAssignmentReturn } from "react-icons/md";
 import { RiTruckLine } from "react-icons/ri";
-import { IoShieldCheckmarkOutline } from "react-icons/io5";
+import { IoShieldCheckmarkOutline, IoSearch } from "react-icons/io5";
 
 export function Header() {
   return (
@@ -23,7 +23,8 @@ export function Header() {
           <img src={Logo} alt="Logo da Loja" />
         </div>
 
-        <div>
+        <div className={styles.searchBar}>
+          <button title='pesquisa'><IoSearch className={styles.searchIcon}/></button>
           <input type="text" placeholder='O que está buscando?'/>
         </div>
 
@@ -31,7 +32,7 @@ export function Header() {
         <div className={styles.icons}>
         <button title='compras'><MdAssignmentReturn /></button>
         <button title='favoritos'><CiHeart /></button>
-          <button title='pesquisa'><FaRegUserCircle /></button>
+          <button title='usuario'><FaRegUserCircle /></button>
           <button title='carrinho'><PiShoppingCart /></button>
         </div>
       </div>
