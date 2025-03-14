@@ -1,41 +1,79 @@
 @use '../../styles/variables' as *;
 
 .header {
-  border: 1px solid red;
-  padding: 16px 0;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: 9rem;
+  color: $gray-medium;
 }
 
+
+.topBar {
+  width: 47rem;
+  margin: 6px;
+  font-weight: 500;
+  font-size: 0.8rem;
+  display: flex;
+  justify-content: space-between;
+  
+  span {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+
+    .iconeTopBar {
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+  }
+  strong {
+    
+    color: $blue;
+  }
+}
+
+
 .container {
-  border: 1px solid;
+  border-top: 1px solid #F0F0F0;
+  border-bottom: 1px solid #F0F0F0;
   width: 80%;
-  height: 9rem;
+  height: 4.5rem;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
+ // margin-bottom: 10px;
+
+  input {
+      border: none;
+      font-weight: 500;
+      font-size: 16px;
+      padding-left: 20px ;
+      width: 38rem;
+      height: 3rem;
+      border-radius: 10px;
+      background-color: $darker-white;
+  }
 }
 
 .logo img {
   height: 50px;
 }
 
-.nav ul {
-  list-style: none;
-  display: flex;
-  gap: 20px;
-}
 
-.nav a {
-  color: white;
-  text-decoration: none;
-  font-size: 16px;
+.icons {
+   display: flex;
+   align-items: center;
+   gap: 25px;
 }
 
 .icons button {
   background: none;
   border: none;
-  font-size: 18px;
-  color: white;
+  font-weight: 500;
+  font-size: 25px;
+  color: $gray-medium;
   cursor: pointer;
-  margin-left: 10px;
 }
