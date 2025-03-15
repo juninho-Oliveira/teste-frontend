@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Header } from './components/Header/Header';
 import { Banner } from './components/Banner/Banner';
 import { Navbar } from "./components/NavBar/NavBar";
+import { ComprePorCategoria } from "./components/Categoria/ComprePorCategoria";
 
 
 function App() {
@@ -12,6 +13,7 @@ function App() {
       <Header />
       <Navbar onSelectCategory={setSelectedCategory} />
       <Banner category={selectedCategory} />
+      <ComprePorCategoria />
     </>
   );
 }

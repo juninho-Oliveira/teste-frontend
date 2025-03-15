@@ -1,0 +1,53 @@
+@use '../../styles/variables' as *;
+
+.comprePorCategoria {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+
+    .containerCategoria {
+        width: 75%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .categoria {
+        
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+        border-radius: 8px;
+        transition: all 0.3s ease;
+  
+      .icone {
+        font-size: 2rem;
+        color: $gray-dark;
+      }
+  
+      p {
+        margin-top: 8px;
+        font-size: 14px;
+        font-weight: 500;
+        color: $gray-medium;
+
+      }
+  
+      &:hover {
+
+        transform: scale(1.05);
+        .icone {
+            color: $blue;
+        }
+
+        p {
+            color: $blue;
+        }
+
+      }
+    }
+  }
+  
