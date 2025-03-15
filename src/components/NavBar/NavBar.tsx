@@ -6,15 +6,17 @@ interface NavbarProps {
 }
 
 export const Navbar = ({ onSelectCategory }: NavbarProps) => {
-  const categories = ['Ofertas do dia','Todas Categorias' , 'Supermercado' , 'Moda' , 'Livros',  'Lançamentos',  'Assinatura'];
+  const categories = [ 'Todas Categorias', 'Supermercado', 'Moda', 'Livros', 'Lançamentos', 'Ofertas do dia', 'Assinatura'];
 
   return (
     <nav className={styles.navbar}>
-      {categories.map((category) => (
-        <button key={category} onClick={() => onSelectCategory(category)}>
-          {category}
-        </button>
-      ))}
+      <div className={styles.containerNavBar}>
+        {categories.map((category) => (
+          <button key={category} onClick={() => onSelectCategory(category)}>
+            {category}
+          </button>
+        ))}
+      </div>
     </nav>
   );
 };
