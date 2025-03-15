@@ -1,0 +1,48 @@
+
+@use '../../styles/variables' as *;
+
+.banner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: start;
+  height: 25rem;
+  background-size: cover;
+  background-position: center;
+  color: $white;
+
+  .container {
+    width: 80%;
+
+    h1 {
+      width: 51rem;
+      font-size: 48px;
+      font-weight: 600;
+    }
+    p {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 32px;
+      font-weight: 400;
+      span {
+        font-weight: 600;
+        color: $yellow;
+      }
+    }
+
+    button {
+      width: 12.9rem;
+      height: 3.1rem;
+      margin-top: 41px;
+      background: $yellow;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      font-weight: 600;
+      cursor: pointer;
+    }
+  }
+
+  
+}
