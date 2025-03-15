@@ -1,0 +1,22 @@
+@use '../../styles/variables' as *;
+
+
+.banner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .containerBanner {
+        width: 80%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .cards {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+}

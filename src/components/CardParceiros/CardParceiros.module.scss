@@ -1,0 +1,69 @@
+@use '../../styles/variables' as *;
+
+.card {
+    margin-top: 90px;
+    margin-bottom: 90px;
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    height: 21rem;
+    width: 39rem;
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1; 
+    }
+    
+
+    .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        padding: 44px;
+        color: $white;
+        background: rgba(0, 0, 0, 0.5); 
+        z-index: 2; 
+    }
+    
+
+    h3 {
+        font-size: 2.5rem;
+        font-weight: bold;
+        margin-bottom: 8px;
+    }
+
+    p {
+        width: 200px;
+        font-size: 1rem;
+        margin-bottom: 32px;
+    }
+
+    a {
+        width: 144px;
+        height: 48px;
+        background-color: $yellow;
+        color: $purple;
+        text-transform: uppercase;
+        font-weight: bold;
+        text-decoration: none;
+        padding: 10px 25px;
+        border-radius: 5px;
+        width: fit-content;
+        cursor: pointer;
+        transition: background 0.3s;
+
+        &:hover {
+            background-color: $yellow;
+ }
+}
+}
