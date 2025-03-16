@@ -8,7 +8,6 @@ import { BannerParceiros } from "./components/BannerParceiros/BannerParceiros";
 import { ProductShowcase } from "./components/Produtos/Produtos"
 import { ComprePorCategoria } from "./components/Categoria/ComprePorCategoria";
 
-
 function App() {
   const [selectedCategory, setSelectedCategory] = useState("Black Friday");
 

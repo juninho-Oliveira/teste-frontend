@@ -13,7 +13,7 @@ export function Header() {
 
       <div className={styles.topBar}>  
         <span><IoShieldCheckmarkOutline className={styles.iconeTopBar} /> Compra <strong>100% segura</strong></span>
-        <span><RiTruckLine className={styles.iconeTopBar}  /> Frete grátis acima de <strong>R$ 200</strong></span>
+        <span><RiTruckLine className={styles.iconeTopBar}  /> <strong>Frete grátis </strong>acima de R$ 200</span>
         <span><CiCreditCard1  className={styles.iconeTopBar}  /> <strong>Parcele</strong> suas compras</span>
       </div>
 

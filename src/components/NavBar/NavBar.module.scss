@@ -16,6 +16,9 @@
 
 
       button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
         font-size: 12px;
         font-weight: 600;
         text-transform: uppercase;
@@ -27,6 +30,7 @@
         transition: 0.3s;
     
         &:hover {
+        text-transform: uppercase;
           color: $blue;
         }
     }

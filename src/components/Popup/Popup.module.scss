@@ -1,0 +1,130 @@
+@use '../../styles/variables' as *;
+
+.containerPopupMain {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5); 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 999; 
+}
+
+.containerPopup {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: $white;
+    padding: 20px;
+    border-radius: 6px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    width: 769px;
+    height: 299px;
+  }
+
+  .containerInformacao {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    text-align: start;
+    color: $gray-dark;
+    
+    h2 {
+        font-size: 20px;
+        font-weight: 400;
+    }
+
+    .price {
+        font-size: 20px;
+        font-weight: 600;
+    }
+
+    .descricao {
+        font-size: 10px;
+        margin-top: 32px;
+    }
+    a {
+        font-weight: 600;
+        text-decoration: none;
+        color: $blue;
+        font-size: 11px;
+    }
+  }
+
+  .containerImg {
+    width: 247px;
+    height: 192px;
+  }
+  
+  .closeButton {
+    opacity: 0.7;
+    color: $gray-dark;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+
+  .containerBotao {
+    display: flex;
+    gap: 12px;
+  }
+  
+  .botaoAdd {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 6px;
+    width: 110px;
+    height: 36px;
+    gap: 10px;
+    border: 1px solid $gray-medium;
+    
+    .botaoSomaMenos {
+        font-size: 15px;
+        font-weight: 600;
+    }
+    button {
+        background: none;
+        border: none;
+        padding: 5px 10px;
+        cursor: pointer;
+        
+    }
+
+    .quantidade {
+        color: $purple;
+    }
+  
+    p {
+      font-size: 18px;
+      font-weight: bold;
+    }
+
+  }
+
+  .botaCompra {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 6px;
+    width: 188px;
+    height: 36px;
+    border: none;
+    cursor: pointer;
+    background-color: $yellow;
+    color: $purple;
+    font-size: 14px;
+    font-weight: 700;
+}
+  

@@ -67,7 +67,7 @@ export const Footer = () => {
             </div>
 
             <div className={styles.containerP}>
-                <p className={styles.copy}>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <p className={styles.copy}>Projeto finalizado por <a href="https://github.com/juninho-Oliveira" target="_blank">Junior</a> - Teste Front-End Econvers.</p>
             </div>
         </footer>
     );
