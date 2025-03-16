@@ -1,54 +1,45 @@
-# React + TypeScript + Vite
+# Teste Econverse: Vaga Desenvolvedor Front-End
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Descrição
 
-Currently, two official plugins are available:
+Este repositório contém o projeto de teste para a vaga de Desenvolvedor Front-End Jr. da Econverse. O objetivo foi desenvolver uma página em React com TypeScript, seguindo as especificações fornecidas e consumindo dados de produtos em JSON a partir de uma API. O projeto também inclui um modal interativo para exibir detalhes dos produtos e foi estilizado utilizando SCSS.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Tecnologias Utilizadas
 
-## Expanding the ESLint configuration
+- **React**: Biblioteca para construção da interface.
+- **TypeScript**: Tipagem estática para garantir a segurança do código.
+- **Axios**: Biblioteca para realizar requisições HTTP e consumir dados da API.
+- **React-Icons**: Para adicionar ícones aos botões da interface.
+- **SCSS (Sass)**: Pré-processador CSS utilizado para estilização.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+### Funcionalidades
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+- Vitrine de Produtos: Exibe uma lista de produtos consumidos de um arquivo JSON.
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+- Interação com Modal: Ao clicar em um produto, um modal exibe detalhes adicionais sobre ele.
+- Responsividade: A página foi projetada para ser responsiva e se adaptar a diferentes tamanhos de tela.
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+### Estrutura do Projeto
+- **src/**: Contém os arquivos de código-fonte.
+- **components/**: Componentes reutilizáveis como a vitrine de produtos e o modal.
+- **styles/**: Arquivos SCSS para a estilização da página.
+- **api/**: Arquivo de configuração do Axios para realizar as requisições.
+
+### Links
+- API de Produtos: <a href="https://lista-de-produtos.onrender.com/products">Link da API</a>
+
+## 🌐 Deploy
+
+<a href="https://portfolio-2024-tau-two.vercel.app/">Portfólio</a>
+
+## Layout
+
+![Imagem 1](/tela.png)
+
+[![Static Badge](https://img.shields.io/badge/Acessar_Layout-Figma-2304D361)](https://www.figma.com/design/rWnzPeoxgynuNPsJjV0VmV/Teste-Front-End-Jr?node-id=0-1&p=f&t=wg8xPwqtQrXR98pW-0)
+
+## 👨‍💻 Autor
+
+Feito por [Damião Junior](https://www.linkedin.com/in/dami%C3%A3o-junior-6568531ab/). Fique à vontade para entrar em contato!
+
