@@ -27,7 +27,7 @@ export const Banner = ({ category }: BannerProps) => {
             <div className={styles.container}>
                 <h1>{title}</h1>
                 <p><span>{span}</span>{text}</p>
-                <button>Ver produto</button>
+                <button title="Ver-Produto">Ver produto</button>
             </div>
         </section>
     );

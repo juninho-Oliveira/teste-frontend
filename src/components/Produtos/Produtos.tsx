@@ -11,9 +11,13 @@ interface Product {
   category: string;
 }
 
+interface ProductShowcaseprops {
+  showMenu?: boolean;
+}
+
 const categories = ["Celular", "Acessórios", "Tablets", "Notebooks", "TVs", "Ver Todos"];
 
-export const ProductShowcase = () => {
+export const ProductShowcase = ({ showMenu = false }: ProductShowcaseprops) => {
   const [products, setProducts] = useState<Product[]>([]);
   const [activeCategory, setActiveCategory] = useState("Celular");
 
@@ -34,17 +38,21 @@ export const ProductShowcase = () => {
       <h2 className={styles.title}>Produtos relacionados</h2>
 
       <div className={styles.containerMain}>
-        <div className={styles.tabs}>
-          {categories.map((category) => (
-            <button
-              key={category}
-              className={activeCategory === category ? styles.active : ""}
-              onClick={() => setActiveCategory(category)}
-            >
-              {category}
-            </button>
-          ))}
-        </div>
+      {showMenu ? (
+          <div className={styles.tabs}>
+            {categories.map((category) => (
+              <button
+                key={category}
+                className={activeCategory === category ? styles.active : ""}
+                onClick={() => setActiveCategory(category)}
+              >
+                {category}
+              </button>
+            ))}
+          </div>
+        ) : (
+          <p className={styles.viewAll}>Ver todos</p>
+        )}
 
         <ProductCard products={filteredProducts} />
       </div>

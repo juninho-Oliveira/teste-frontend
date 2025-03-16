@@ -45,6 +45,11 @@
 
     .containerMain {
       width: 80%;
+      p {
+        color: $gray-dark;
+        font-weight: 700;
+        font-size: 15px;
+      }
     }
 
 }

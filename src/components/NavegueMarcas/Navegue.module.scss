@@ -1,0 +1,25 @@
+@use '../../styles/variables' as *;
+
+.containerMarcas {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .containerCardMarcas {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 42px;
+        width: 80%;
+    }
+
+    .cardMarcas {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        width: 211px;
+        height: 211px;
+    }
+}
