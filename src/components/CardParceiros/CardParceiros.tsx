@@ -9,7 +9,7 @@ interface ParceiroCardProps {
 
 export const ParceiroCard = ({ imagem, titulo, descricao, link }: ParceiroCardProps) => {
      
-    console.log("chegou? ", imagem, titulo, descricao, link);
+    // console.log("chegou? ", imagem, titulo, descricao, link);
 
     return (
         <div className={styles.card}>

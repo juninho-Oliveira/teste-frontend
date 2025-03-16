@@ -28,6 +28,7 @@
     border-radius: 10px;
     text-align: start;
     transition: box-shadow 0.3s ease;
+    box-shadow: 0px 5px 8px $gray-medium;
 
     span {
         font-size: 12px;
@@ -35,9 +36,6 @@
         color: $blue;
     }
 
-    &:hover {
-        box-shadow: 0px 5px 8px $gray-medium;
-    }
 
     img {
         width: 100%;

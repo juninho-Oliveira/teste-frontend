@@ -26,18 +26,20 @@
 
         button {
             font-size: 16px;
+            font-weight: 500;
             width: 240px;
             height: 40px;
             padding: 10px 15px;
             border: 1px solid $gray-medium;
             background: transparent;
-            font-weight: bold;
             cursor: pointer;
             color: $gray-medium;
             transition: color 0.3s ease;
+            text-transform: uppercase;
 
             &.active,
             &:hover {
+                font-weight: bolder;
                 color: $blue;
             }
         }
@@ -45,7 +47,7 @@
 
     .containerMain {
       width: 80%;
-      p {
+      .viewAll {
         color: $gray-dark;
         font-weight: 700;
         font-size: 15px;

@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Header } from './components/Header/Header';
 import { Banner } from './components/Banner/Banner';
 import { Navbar } from "./components/NavBar/NavBar";
+import { Footer } from "./components/Footer/Footer";
 import {NaveguePorMarcas} from "./components/NavegueMarcas/Navegue"
 import { BannerParceiros } from "./components/BannerParceiros/BannerParceiros";
 import { ProductShowcase } from "./components/Produtos/Produtos"
@@ -23,6 +24,7 @@ function App() {
       <BannerParceiros />
       <NaveguePorMarcas />
       <ProductShowcase />
+      <Footer />
     </>
   );
 }

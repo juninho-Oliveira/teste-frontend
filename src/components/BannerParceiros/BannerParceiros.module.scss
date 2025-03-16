@@ -5,18 +5,18 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
 
     .containerBanner {
         width: 80%;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
     }
 
     .cards {
         width: 100%;
         display: flex;
         align-items: center;
-        justify-content: space-between;
+        justify-content: center;
+        gap: 13px;
+        
     }
 }
