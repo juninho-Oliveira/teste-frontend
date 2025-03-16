@@ -2,7 +2,7 @@
 import styles from "./Banner.module.scss";
 import bannerImagem from '../../assets/Banner.png'
 
-type Category = 'Ofertas do dia' | 'Todas Categorias' | 'Supermercado' | 'Moda' | 'Livros' | 'Lançamentos' | 'Assinatura' ;
+export type Category = 'Ofertas do dia' | 'Todas Categorias' | 'Supermercado' | 'Moda' | 'Livros' | 'Lançamentos' | 'Assinatura' ;
 
 interface BannerProps {
     category: Category;

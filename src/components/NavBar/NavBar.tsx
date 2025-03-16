@@ -1,13 +1,14 @@
 // src/components/Navbar.tsx
 import styles from "./NavBar.module.scss";
 import { TbCrown } from "react-icons/tb";
+import { Category } from "../Banner/Banner";
 
 interface NavbarProps {
-  onSelectCategory: (category: string) => void;
+  onSelectCategory: (category: Category) => void;
 }
 
 export const Navbar = ({ onSelectCategory }: NavbarProps) => {
-  const categories = ['Todas Categorias', 'Supermercado', 'Moda', 'Livros', 'Lançamentos', 'Ofertas do dia', 'Assinatura'];
+  const categories: Category[] = ['Todas Categorias', 'Supermercado', 'Moda', 'Livros', 'Lançamentos', 'Ofertas do dia', 'Assinatura'];
 
   return (
     <nav className={styles.navbar}>
