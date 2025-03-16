@@ -188,4 +188,133 @@
     }
 
   }
+
+  @media (max-width: 1024px) {
+    .footer {
+        .newsletter {
+            height: auto;
+            padding: 20px;
+
+            .containerNewsLestter {
+                flex-direction: column;
+                align-items: center;
+                width: 90%;
+                text-align: center;
+            }
+
+            .inputGroup {
+                width: 100%;
+
+                .inputContainer {
+                    flex-direction: column;
+                    align-items: center;
+
+                    input {
+                        width: 100%;
+                    }
+
+                    button {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+
+        .footerContent {
+            height: auto;
+            padding: 20px;
+
+            .containerFooterLogoLinks {
+                flex-direction: column;
+                align-items: center;
+                gap: 40px;
+                width: 100%;
+                text-align: center;
+            }
+
+            .logo {
+                width: auto;
+
+                .socialIcons {
+                    justify-content: center;
+                }
+            }
+
+            .links {
+                flex-direction: column;
+                gap: 20px;
+                align-items: center;
+
+                div {
+                    width: auto;
+                    text-align: center;
+                }
+            }
+
+            hr {
+                display: none;
+            }
+        }
+
+        .containerP {
+            height: auto;
+            padding: 10px;
+            text-align: center;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .footer {
+        .newsletter {
+            .containerNewsLestter {
+                width: 100%;
+            }
+        }
+
+        .footerContent {
+            .containerFooterLogoLinks {
+                gap: 20px;
+            }
+
+            .links {
+                gap: 15px;
+            }
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    .footer {
+        .newsletter {
+            padding: 15px;
+        }
+
+        .footerContent {
+            padding: 15px;
+
+            .logo {
+                .socialIcons {
+                    font-size: 20px;
+                }
+            }
+
+            .links {
+                h3 {
+                    font-size: 14px;
+                }
+
+                a {
+                    font-size: 12px;
+                }
+            }
+        }
+
+        .containerP {
+            font-size: 12px;
+            padding: 8px;
+        }
+    }
+}
+
   

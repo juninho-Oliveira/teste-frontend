@@ -1,7 +1,7 @@
 @use '../../styles/variables' as *;
 
 .navbar {
-    height: 2,5rem;
+    height: 2.5rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -34,3 +34,41 @@
     }
   }
   
+  @media (max-width: 1024px) {
+    .containerNavBar {
+        width: 90%;
+        padding: 10px 30px;
+    }
+
+    button {
+        font-size: 11px;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        height: auto;
+        padding: 10px 0;
+    }
+
+    .containerNavBar {
+        width: 100%;
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+
+    button {
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .containerNavBar {
+        padding: 10px;
+    }
+
+    button {
+        font-size: 9px;
+    }
+}

@@ -67,3 +67,77 @@
  }
 }
 }
+
+@media (max-width: 1024px) {
+    .card {
+        width: 32rem;
+        height: 18rem;
+
+        .overlay {
+            padding: 30px;
+        }
+
+        h3 {
+            font-size: 2rem;
+        }
+
+        p {
+            width: 180px;
+            font-size: 0.9rem;
+        }
+
+        a {
+            width: 130px;
+            height: 42px;
+            font-size: 0.9rem;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .card {
+        width: 100%;
+        height: auto;
+
+        .overlay {
+            padding: 20px;
+        }
+
+        h3 {
+            font-size: 1.8rem;
+        }
+
+        p {
+            width: 100%;
+            font-size: 0.85rem;
+        }
+
+        a {
+            width: 120px;
+            height: 40px;
+            font-size: 0.85rem;
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    .card {
+        .overlay {
+            padding: 15px;
+        }
+
+        h3 {
+            font-size: 1.5rem;
+        }
+
+        p {
+            font-size: 0.8rem;
+        }
+
+        a {
+            width: 110px;
+            height: 36px;
+            font-size: 0.8rem;
+        }
+    }
+}

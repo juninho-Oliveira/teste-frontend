@@ -23,3 +23,39 @@
         height: 211px;
     }
 }
+
+@media (max-width: 1024px) {
+    .containerCardMarcas {
+        width: 90%;
+        gap: 30px;
+    }
+
+    .cardMarcas {
+        width: 180px;
+        height: 180px;
+    }
+}
+
+@media (max-width: 768px) {
+    .containerCardMarcas {
+        width: 100%;
+        gap: 20px;
+    }
+
+    .cardMarcas {
+        width: 150px;
+        height: 150px;
+    }
+}
+
+@media (max-width: 480px) {
+    .containerCardMarcas {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .cardMarcas {
+        width: 120px;
+        height: 120px;
+    }
+}

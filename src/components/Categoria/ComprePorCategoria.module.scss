@@ -51,4 +51,58 @@
       }
     }
   }
+
+  @media (max-width: 1024px) {
+    .comprePorCategoria {
+        .containerCategoria {
+            width: 90%;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        .categoria {
+            padding: 8px;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .comprePorCategoria {
+        flex-direction: column;
+        align-items: center;
+
+        .containerCategoria {
+            width: 100%;
+            gap: 12px;
+        }
+
+        .categoria {
+            .icone {
+                font-size: 1.8rem;
+            }
+
+            p {
+                font-size: 13px;
+            }
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    .comprePorCategoria {
+        padding: 10px;
+
+        .categoria {
+            .icone {
+                font-size: 1.5rem;
+            }
+
+            p {
+                font-size: 12px;
+            }
+        }
+    }
+}
+
   
