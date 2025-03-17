@@ -1,5 +1,8 @@
 # Teste Econverse: Vaga Desenvolvedor Front-End
 
+# ---------------ATENÇÃO-----------------------------------
+Acabei fazendo o projeto todo no meu repositorio do gitHub <a href="https://github.com/juninho-Oliveira/teste-frontend">repositorio</a>, não tinha entendido direito e acabei finalizando o projeto lá.
+
 ## Descrição
 
 Este repositório contém o projeto de teste para a vaga de Desenvolvedor Front-End Jr. da Econverse. O objetivo foi desenvolver uma página em React com TypeScript, seguindo as especificações fornecidas e consumindo dados de produtos em JSON a partir de uma API. O projeto também inclui um modal interativo para exibir detalhes dos produtos e foi estilizado utilizando SCSS.
